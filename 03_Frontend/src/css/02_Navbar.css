@@ -1,0 +1,21 @@
+.navbar{
+    background-color: black;
+}
+
+.navlist{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navlist li{
+    padding: 12px 24px;
+    color: white;
+}
+
+.navlist li:hover{
+    background-color: grey; 
+    cursor: pointer; 
+}
