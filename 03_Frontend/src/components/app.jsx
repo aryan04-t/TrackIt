@@ -16,7 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <Navbar /> 
 
             <Routes>
-    
+
                 <Route path="/home" element={<Home />} />;
 
             </Routes>
@@ -24,7 +24,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <Footer />
 
         </BrowserRouter>
-
 
     </React.StrictMode>
 

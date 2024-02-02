@@ -2,26 +2,46 @@
 
 
 #logo-button-container{
-    padding: 10px 0px 10px 20px;
+    padding: 13px 0px 10px 20px;
 }
 
 #logo-button{
     
-    height: 55px;
-    width: 55px;
+    height: 50px;
+    width: 50px;
 
     display: flex;
     justify-content: center;
     
-    border-radius: 20px;
+    border-radius: 25px;
     border: none;
     background-color: transparent;
 
 }
 
+
+#cursor-mask{
+
+    position: absolute;
+
+    height: 50px;
+    width: 50px;
+
+    display: flex;
+    justify-content: center;
+    
+    border-radius: 25px;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+
 #logo-button img{
-    height: 60px;
-    width: 83px;
+
+    height: 55px;
+    width: 76px;
+
 }
 
 
@@ -30,19 +50,25 @@
 
 
 #navbar{
-    background-color: white;
+    display: flex;
+    justify-content: space-between;
 }
 
 #navlist{
 
     display: flex;
+    justify-content: space-between;
     list-style-type: none;
     
-    width: 720px;
+    margin: 100px 40px 10px 0px;
+
+    min-width: 680px;
+
     height: 45px;
+    overflow: hidden;
     
     padding: 0;
-    margin: 0;
+    margin: 16px;
 
     background-color: white;
     border-radius: 50px;
@@ -52,27 +78,29 @@
 }
 
 #navlist li{
+    
+    font-size: 16px;
     color: black;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
-
-
 #navlist-start{
-    padding: 12px 0px 12px 40px;
+    padding: 0px 0px 0px 40px; 
 }
 
 #navlist-end{
-    padding: 12px 40px 12px 0px;
-}
-
-.rest-nav-list{
-    padding: 12px 30px;
+    padding: 0px 40px 0px 0px; 
 }
 
 
 
 #navlist li:hover{
-    color: green;
+    color: #268B0C;
     font-size: 18px; 
     cursor: pointer; 
 }
@@ -84,7 +112,7 @@
     content: attr(data-text);
     height: 0;
     visibility: hidden;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 
@@ -92,13 +120,13 @@
 
 
 #settings-button-container{
-    padding: 10px 20px 10px 0px;
+    padding: 13px 20px 10px 0px;
 }
 
 #settings-button{
 
-    height: 56px;
-    width: 55px;
+    height: 45px;
+    width: 45px;
     
     display: flex;
     justify-content: center;
@@ -109,11 +137,12 @@
     background-color: white;
     border: none;
     
+    cursor: pointer;
 }
 
 #settings-button img{
 
-    height: 45px;
-    width: 45px;
+    height: 35px;
+    width: 35px;
 
 }

@@ -1,5 +1,12 @@
-import React from 'react'
-import '../../public/static/css/footer.css'
+import React from 'react';
+import '../assets/css/footer.css';
+
+import instagramIcon from '../assets/vectors/socialMediaAndOtherIcons/instagramIcon.svg'; 
+import faceebookIcon from '../assets/vectors/socialMediaAndOtherIcons/facebookIcon.svg'; 
+import twitterIcon from '../assets/vectors/socialMediaAndOtherIcons/twitterIcon.svg'; 
+import linkedInIcon from '../assets/vectors/socialMediaAndOtherIcons/linkedInIcon.svg'; 
+
+
 
 function Footer() {
   
@@ -14,19 +21,19 @@ function Footer() {
           <div id="social-media-handles"> 
 
             <button>
-              <img src="../../public/static/vectors/social media and other icons/Instagram Icon.svg" />
+              <img src={instagramIcon} />
             </button>
 
             <button>
-              <img src="../../public/static/vectors/social media and other icons/Facebook Icon.svg" /> 
+              <img src={faceebookIcon} /> 
             </button>
 
             <button>
-              <img src="../../public/static/vectors/social media and other icons/Twitter Icon.svg" />
+              <img src={twitterIcon} />
             </button>
 
             <button>
-              <img src="../../public/static/vectors/social media and other icons/LinkedIn Icon.svg" />
+              <img src={linkedInIcon} />
             </button>
           
           </div>
@@ -34,7 +41,7 @@ function Footer() {
         </div>
 
         <div id="footer-content-container">
-            © 2024 TrackIt | All Rights Reserved 
+          © 2024 TrackIt | All Rights Reserved 
         </div>
 
       </div>
