@@ -1,19 +1,20 @@
-import React from 'react'
-import '../../public/static/css/navbar.css'
+import React from 'react'; 
+import '../assets/css/navbar.css'; 
+
+import trackItLogo from "../assets/vectors/trackItLogo.svg"; 
+import settingsLogo from "../assets/vectors/socialMediaAndOtherIcons/settingsIcon.svg"; 
 
 
 function Navbar() {
     
     return (
     
-        <div id="navbar">
+        <div id="navbar"> 
 
-            <div id="logo-button-container">
-                <button id="logo-button">
-                    <img src="../../public/static/vectors/Trackit Logo.svg" />
-                    <div id="cursor-mask">
-                        
-                    </div>
+            <div id="logo-button-container"> 
+                <button id="logo-button"> 
+                    <img src={trackItLogo} /> 
+                    <div id="cursor-mask"> </div> 
                 </button> 
             </div> 
 
@@ -28,7 +29,7 @@ function Navbar() {
 
             <div id="settings-button-container"> 
                 <button id="settings-button"> 
-                    <img src="../../public/static/vectors/social media and other icons/Settings Icon.svg" />
+                    <img src={settingsLogo} />
                 </button>
             </div>
 
