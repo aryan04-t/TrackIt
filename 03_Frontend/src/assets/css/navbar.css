@@ -49,6 +49,12 @@
 /*  Nav-List */
 
 
+#sticky-navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
 #navbar{
     display: flex;
     justify-content: space-between;
@@ -59,8 +65,6 @@
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    
-    margin: 100px 40px 10px 0px;
 
     min-width: 680px;
 
@@ -120,7 +124,7 @@
 
 
 #settings-button-container{
-    padding: 13px 20px 10px 0px;
+    padding: 15px 20px 10px 0px;
 }
 
 #settings-button{
