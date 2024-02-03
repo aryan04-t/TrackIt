@@ -1,0 +1,276 @@
+.container{
+    height: 5750px;
+    width: 100%;
+}
+
+
+#background-view-1{
+
+    width: 100%;
+    height: 850px;
+
+    background-image: url(../vectors/bubblePattern/viewOneAndTwo.svg);
+    background-repeat: no-repeat;
+    
+    position: absolute;
+    top: 250px;
+
+}
+
+#content-1{
+
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    height: 650px;
+
+}
+
+#text-container{
+    width: 50%;
+    position: relative;
+}
+
+#landing-page-text{
+    
+    position: absolute;
+    margin: 0;
+    
+    font-size: 80px;
+    top: 150px;
+    left: 300px;
+}
+
+
+.sapiens{
+    width: 50%;
+    position: relative;
+}
+
+#male{
+    height: 520px;
+    position: absolute;
+    top: 60px;
+    right: 200px;
+}
+
+#female{
+    height: 500px;
+    position: absolute;
+    top: 80px;
+    right: 450px;
+}
+
+
+
+
+#background-view-2{
+    background-image: url(../vectors/bubblePattern/viewTwoAndThree.svg);
+    width: 100%;
+    height: 850px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 1100px;
+}
+
+.container-div-of-halves{
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    
+    position: relative;
+    border: 2px solid violet;
+}
+
+
+.div-half{
+    width: 50%;
+    position: relative;
+}
+
+
+.image-left-align{
+    
+    position: absolute;
+    
+}
+
+.image-right-align{
+    
+    position: absolute;
+    
+}
+
+
+.top-50{
+    top: 50px;
+}
+
+.top-120{
+    top: 120px;
+}
+
+.top-150{
+    top: 150px;
+}
+
+.top-200{
+    top: 200px;
+}
+
+.top-220{
+    top: 200px;
+}
+
+.top-240{
+    top: 240px;
+}
+
+
+.top-280{
+    top: 280px;
+}
+
+
+.left-190{
+    left: 190px;
+}
+
+.left-220{
+    left: 220px;
+}
+
+.left-260{
+    left: 260px;
+}
+
+.left-280{
+    left: 280px;
+}
+
+
+.right-180{
+    right: 180px;
+}
+
+.right-220{
+    right: 220px;
+}
+
+.right-250{
+    right: 250px;
+}
+
+
+.height-350{
+    height: 350px;
+}
+
+.height-400{
+    height: 400px;
+}
+
+.height-500{
+    height: 500px;
+}
+
+.height-550{
+    height: 550px;
+}
+
+.height-600{
+    height: 600px;
+}
+
+.height-650{
+    height: 650px;
+}
+
+
+.height-700{
+    height: 700px;
+}
+
+.height-750{
+    height: 750px;
+}
+
+
+.text-right-align{
+    
+    margin: 0;
+    position: absolute;
+    text-align: right;
+
+}
+
+
+.text-left-align{
+    
+    margin: 0;
+
+    position: absolute;
+    
+    text-align: left;
+
+}
+
+
+
+.font-40{
+    font-size: 40px;
+}
+
+.font-45{
+    font-size: 45px;
+}
+
+.font-50{
+    font-size: 50px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+
+
+#background-view-3{
+    background-image: url(../vectors/bubblePattern/viewThreeAndFour.svg);
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 1950px;
+}
+
+
+#background-view-4{
+    background-image: url(../vectors/bubblePattern/viewFourAndFive.svg);
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 2800px;
+}
+
+
+#background-view-5{
+    background-image: url(../vectors/bubblePattern/viewFiveAndSix.svg);
+    width: 100%;
+    height: 850px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 3650px;
+}
+
+#background-view-6{
+    background-image: url(../vectors/bubblePattern/viewSixAndSeven.svg);
+    width: 100%;
+    height: 1300px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 4500px;
+}
