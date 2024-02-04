@@ -1,8 +1,8 @@
-/* Logo */
+/*  Logo  */ 
 
 
 #logo-button-container{
-    padding: 13px 0px 10px 20px;
+    padding: 16px 0px 10px 23px;
 }
 
 #logo-button{
@@ -51,7 +51,7 @@
 
 #sticky-navbar{
     position: sticky;
-    top: 0;
+    top: 0px;
     z-index: 1;
 }
 
@@ -64,6 +64,8 @@
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
     list-style-type: none;
 
     min-width: 680px;
@@ -72,12 +74,14 @@
     overflow: hidden;
     
     padding: 0;
-    margin: 16px;
+    margin: 20px;
 
     background-color: white;
     border-radius: 50px;
 
     box-shadow: 1px 2px 4px 1px #BFBFBF;
+
+    user-select: none;
 
 }
 
@@ -94,11 +98,11 @@
 }
 
 #navlist-start{
-    padding: 0px 0px 0px 40px; 
+    margin: 0px 0px 0px 40px; 
 }
 
 #navlist-end{
-    padding: 0px 40px 0px 0px; 
+    margin: 0px 40px 0px 0px; 
 }
 
 
@@ -120,11 +124,19 @@
 }
 
 
+#navlist button{
+    background-color: transparent;
+    border-radius: 40px;
+    height: 20px;
+    border: none;
+}
+
+
 /* Settings Button */
 
 
 #settings-button-container{
-    padding: 15px 20px 10px 0px;
+    padding: 19px 22px 10px 0px;
 }
 
 #settings-button{

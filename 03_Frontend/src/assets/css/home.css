@@ -1,30 +1,24 @@
 .container{
-    height: 5750px;
+    height: 5240px;
     width: 100%;
-}
-
-
-#background-view-1{
-
-    width: 100%;
-    height: 850px;
-
-    background-image: url(../vectors/bubblePattern/viewOneAndTwo.svg);
-    background-repeat: no-repeat;
     
     position: absolute;
-    top: 250px;
+    top: 0px;
 
+    background-color: #D9D9D9;;
 }
 
-#content-1{
 
+#content-1{
+    
     display: flex;
     flex-direction: row;
-
+    
     width: 100%;
     height: 650px;
 
+    z-index: 1;
+    
 }
 
 #text-container{
@@ -62,17 +56,6 @@
     right: 450px;
 }
 
-
-
-
-#background-view-2{
-    background-image: url(../vectors/bubblePattern/viewTwoAndThree.svg);
-    width: 100%;
-    height: 850px;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 1100px;
-}
 
 .container-div-of-halves{
     display: flex;
@@ -162,6 +145,9 @@
     right: 250px;
 }
 
+.right-280{
+    right: 280px;
+}
 
 .height-350{
     height: 350px;
@@ -232,44 +218,4 @@
 
 .bold{
     font-weight: bold;
-}
-
-
-
-#background-view-3{
-    background-image: url(../vectors/bubblePattern/viewThreeAndFour.svg);
-    width: 100%;
-    height: 700px;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 1950px;
-}
-
-
-#background-view-4{
-    background-image: url(../vectors/bubblePattern/viewFourAndFive.svg);
-    width: 100%;
-    height: 700px;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 2800px;
-}
-
-
-#background-view-5{
-    background-image: url(../vectors/bubblePattern/viewFiveAndSix.svg);
-    width: 100%;
-    height: 850px;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 3650px;
-}
-
-#background-view-6{
-    background-image: url(../vectors/bubblePattern/viewSixAndSeven.svg);
-    width: 100%;
-    height: 1300px;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 4500px;
 }
