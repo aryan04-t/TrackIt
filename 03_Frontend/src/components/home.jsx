@@ -1,6 +1,11 @@
 import React from 'react'
 import '../assets/css/home.css' 
 
+
+import Navbar from './navbar.jsx';
+import Footer from './footer.jsx';
+import BubblePattern from './bubblePattern';
+
 import maleSapien from '../assets/vectors/landingPageSapiens/male.svg';
 import femaleSapien from '../assets/vectors/landingPageSapiens/female.svg';
 
@@ -17,7 +22,10 @@ function Home() {
     
     <div className="container">
 
-      <div id="background-view-1"></div>
+      <Navbar />
+      
+      <BubblePattern />
+
 
       <div id="content-1">
         
@@ -34,7 +42,6 @@ function Home() {
       
       </div>
 
-      <div id="background-view-2"></div>
 
       <div className="container-div-of-halves height-650">
 
@@ -43,15 +50,13 @@ function Home() {
         </div>
         
         <div className="div-half">
-          <p className="text-right-align font-50 right-220 top-240">
+          <p className="text-right-align font-50 right-280 top-240">
             TrackIt helps you <span className="bold"> track </span> <br/> all your daily essential <br/> needs <span className="bold"> with ease. </span>
           </p>
         </div>
       
       </div>
 
-
-      <div id="background-view-3"></div>
 
       <div className="container-div-of-halves height-750">
         
@@ -67,7 +72,6 @@ function Home() {
 
       </div>
 
-      <div id="background-view-4"></div> 
 
       <div className="container-div-of-halves height-600">
       
@@ -83,7 +87,6 @@ function Home() {
 
       </div>
 
-      <div id="background-view-5"></div>
 
       <div className="container-div-of-halves height-750">
         
@@ -99,7 +102,6 @@ function Home() {
 
       </div>
 
-      <div id="background-view-6"></div>
 
       <div className="container-div-of-halves height-700">
       
@@ -115,11 +117,12 @@ function Home() {
 
       </div>
 
+
       <div className="container-div-of-halves height-750">
         
         <div className="div-half">
           <p className="text-left-align font-40 left-190 top-240">
-            Our "So, what are you waiting <br/> for ?? <br/> Just by simply sign-in, <br/> start using our <span className="bold"> "Quality <br/> Products" </span>  from now onwards for free. <br/>   
+            So, what are you waiting <br/> for ?? <br/> Just by simply sign-in, <br/> start using our <span className="bold"> "Quality <br/> Products" </span>  from now onwards for free. <br/>   
           </p> 
         </div>
       
@@ -128,6 +131,9 @@ function Home() {
         </div>
 
       </div>
+
+
+      <Footer />
 
     </div>
   

@@ -21,12 +21,31 @@ function Navbar() {
                 </div> 
 
                 <ul id="navlist">
-                    <li id="navlist-start" data-text="Home"> <span> Home </span> </li>
-                    <li data-text="Products"> Products </li>
-                    <li data-text="Subscriptions"> Subscriptions </li>
-                    <li data-text="Guide"> Guide </li>
-                    <li data-text="About"> About </li>
-                    <li id="navlist-end" data-text="Login"> Login </li>
+                    
+                    <button id="navlist-start">
+                        <li data-text="Home"> <span> Home </span> </li>
+                    </button>
+                    
+                    <button>
+                        <li data-text="Products"> Products </li>
+                    </button>
+
+                    <button>
+                        <li data-text="Subscriptions"> Subscriptions </li>
+                    </button>
+
+                    <button>
+                        <li data-text="Guide"> Guide </li>
+                    </button>
+
+                    <button>
+                        <li data-text="About"> About </li>
+                    </button>
+
+                    <button id="navlist-end">
+                        <li data-text="Login"> Login </li>
+                    </button>
+                    
                 </ul>
 
                 <div id="settings-button-container"> 
