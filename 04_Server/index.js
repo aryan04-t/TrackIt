@@ -6,6 +6,7 @@ const path = require('path');
 // Import Modules 
 const {connectDB} = require('./db/connect');
 const {disconnectDB} = require('./db/disconnect');
+const userAuthRouter = require('./router/userAuthRouter');
 
 // Configure Env Variables.
 dotenv.config();
@@ -27,6 +28,9 @@ app.use(express.static(publicDirectoryPath));
 app.get('/', (req, res) => {
     res.status(200).sendFile(filePath);
 });
+
+// Router
+app.use("/user/auth", userAuthRouter);
 
 const start = async () => {
     try {
