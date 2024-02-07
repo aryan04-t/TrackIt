@@ -29,23 +29,31 @@ function products() {
                 <div id="zero" className="product-icon-container">
 
                     <div id="zero-zero" className="product-icon-background spacing-icon-divs blue-box-shadow" >
-                        <img src={notebookIcon} alt="notepad-icon" />
+                        <button>
+                            <img src={notebookIcon} alt="notepad-icon" />
+                        </button>
                     </div>
 
                     <div id="zero-one" className="product-icon-background green-box-shadow" >
-                        <img src={caloriesIcon} alt="kcal-tracker-icon" />
+                        <button>
+                            <img src={caloriesIcon} alt="kcal-tracker-icon" />
+                        </button>
                     </div>
 
                 </div>
                 
-                <div id="one" className="product-icon-container">
+                <div id="one" className="product-icon-container"> 
 
                     <div id="one-zero" className="product-icon-background spacing-icon-divs yellow-box-shadow" > 
-                        <img src={birthdayIcon} alt="birthday-and-anniversary-reminder-icon" />
+                        <button>
+                            <img src={birthdayIcon} alt="birthday-and-anniversary-reminder-icon" />
+                        </button>
                     </div> 
 
-                    <div id="one-one" className="product-icon-background red-box-shadow" > 
-                        <img src={budgetIcon} alt="expense-tracker-icon" />
+                    <div id="one-one" className="product-icon-background red-box-shadow"> 
+                        <button>
+                            <img src={budgetIcon} alt="expense-tracker-icon" /> 
+                        </button>
                     </div> 
 
                 </div>

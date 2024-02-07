@@ -1,3 +1,8 @@
+.user-select-none{
+    user-select: none;
+}
+
+
 .container{
     height: 5240px;
     width: 100%;

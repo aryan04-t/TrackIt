@@ -39,9 +39,11 @@ function Navbar() {
                         </button>
                     </NavLink>
 
-                    <button>
-                        <li data-text="Subscriptions"> Subscriptions </li>
-                    </button>
+                    <NavLink to='/subscriptions' >
+                        <button>
+                            <li data-text="Subscriptions"> Subscriptions </li>
+                        </button>
+                    </NavLink> 
 
                     <button>
                         <li data-text="Guide"> Guide </li>

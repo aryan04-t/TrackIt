@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Home from './home.jsx';
 import Products from './products.jsx';
+import Subscriptions from './subscriptions.jsx';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -17,6 +18,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                 <Route path="/" element={<Home />} />; 
                 <Route path="/home" element={<Home />} />; 
                 <Route path="/products" element={<Products />} />; 
+                <Route path="/subscriptions" element={<Subscriptions />} />; 
+                
 
             </Routes>
             
