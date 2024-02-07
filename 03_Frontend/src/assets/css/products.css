@@ -1,11 +1,15 @@
 @media screen and (max-width: 750px) {
     
     #products #products-container{
+        
         height: auto;
+
     }
 
     #products-container #product-icons-div{
+        
         height: auto;
+    
     }
 
     #products-container #product-icons-div .product-icon-container{
@@ -130,4 +134,16 @@
 
 .user-select-none{
     user-select: none;
+}
+
+
+
+#product-icons-div button{
+
+    padding: 18px;
+    border-radius: 20px;
+
+    background-color: transparent;
+    border: none;
+
 }

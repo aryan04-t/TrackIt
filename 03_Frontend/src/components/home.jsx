@@ -20,7 +20,7 @@ import aBeardGuy from '../assets/vectors/otherHumanAnimationVectors/aBeardGuy.sv
 function Home() {
   return (
     
-    <div className="container">
+    <div className="container user-select-none">
 
       <Navbar />
       
