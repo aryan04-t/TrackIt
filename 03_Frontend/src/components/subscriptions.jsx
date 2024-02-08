@@ -13,7 +13,7 @@ import redCross from '../assets/vectors/socialMediaAndOtherIcons/redCross.svg'
 function  Subscriptions() {
   return (
 
-    <div id="subscriptions">
+    <div id="subscriptions" className="user-select-none">
 
         <div id="subscriptions-container-div"> 
 

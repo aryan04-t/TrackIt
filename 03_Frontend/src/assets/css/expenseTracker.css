@@ -1,0 +1,86 @@
+#expense-tracker-ui-contianer{
+
+    background-color: grey;
+    height: calc(100vh - 85px);
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px 0px;
+
+}
+
+#add-button{
+
+    height: 80px;
+    width: 200px; 
+
+    background-color: lightgreen;
+    padding: 20px 40px;
+    
+    border: none; 
+    border-radius: 5px;
+
+    transition: border-radius 0.5s;
+
+}
+
+
+#add-button:hover{
+
+    border-radius: 50px;
+
+}
+
+table{
+    
+    background-color: white; 
+    border-radius: 20px;
+    
+}
+
+tr{
+    display: flex;
+    
+    border: 1px solid black;
+    border-radius: 20px;
+
+}
+
+th, td{
+
+    height: 50px;
+    width: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.delete-button{
+
+    background-color: #FF5252;
+    height: 30px;
+    width: 60px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+
+}
+
+
+.edit-button{
+
+    background-color: #52A0FF;
+    height: 30px;
+    width: 60px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+
+}
