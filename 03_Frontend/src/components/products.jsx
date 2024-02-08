@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 import Navbar from './navbar.jsx'; 
 
@@ -29,13 +30,13 @@ function products() {
                 <div id="zero" className="product-icon-container">
 
                     <div id="zero-zero" className="product-icon-background spacing-icon-divs blue-box-shadow" >
-                        <button>
+                        <button className="cursor-pointer">
                             <img src={notebookIcon} alt="notepad-icon" />
                         </button>
                     </div>
 
                     <div id="zero-one" className="product-icon-background green-box-shadow" >
-                        <button>
+                        <button className="cursor-pointer">
                             <img src={caloriesIcon} alt="kcal-tracker-icon" />
                         </button>
                     </div>
@@ -45,15 +46,17 @@ function products() {
                 <div id="one" className="product-icon-container"> 
 
                     <div id="one-zero" className="product-icon-background spacing-icon-divs yellow-box-shadow" > 
-                        <button>
+                        <button className="cursor-pointer">
                             <img src={birthdayIcon} alt="birthday-and-anniversary-reminder-icon" />
                         </button>
                     </div> 
 
                     <div id="one-one" className="product-icon-background red-box-shadow"> 
-                        <button>
-                            <img src={budgetIcon} alt="expense-tracker-icon" /> 
-                        </button>
+                        <NavLink to='/expenseTracker'>
+                            <button className="cursor-pointer">
+                                <img src={budgetIcon} alt="expense-tracker-icon" /> 
+                            </button>
+                        </NavLink>
                     </div> 
 
                 </div>
