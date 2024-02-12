@@ -1,14 +1,15 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
+const dotenv = require('dotenv');
 
 const signUpAndlLoginRoutes = require('./routes/signUpAndLoginRoutes.js'); 
 const allExpenseTrackerRoutes = require('./routes/allExpenseTrackerRoutes.js'); 
 const allNotepadRoutes = require('./routes/allNotepadRoutes.js'); 
 
-
+dotenv.config();
 const app = express();
-const port = 3000;
+const port = process.env.PORT;
 
 
 
@@ -16,7 +17,7 @@ app.use(cors());
 app.use(express.json());
 
 
-mongoose.connect('mongodb+srv://aryantomar5000:<password>@cluster0.a3z9k3y.mongodb.net/tackit?retryWrites=true&w=majority').then( (db) => {
+mongoose.connect(process.env.MONGOD_URI).then( (db) => {
     console.log("connected successfully");
 }).catch( err => console.log(err) );
 
