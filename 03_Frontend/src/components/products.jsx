@@ -30,9 +30,11 @@ function products() {
                 <div id="zero" className="product-icon-container">
 
                     <div id="zero-zero" className="product-icon-background spacing-icon-divs blue-box-shadow" >
-                        <button className="cursor-pointer">
-                            <img src={notebookIcon} alt="notepad-icon" />
-                        </button>
+                        <NavLink to="/notepad">
+                            <button className="cursor-pointer">
+                                <img src={notebookIcon} alt="notepad-icon" />
+                            </button>
+                        </NavLink>
                     </div>
 
                     <div id="zero-one" className="product-icon-background green-box-shadow" >

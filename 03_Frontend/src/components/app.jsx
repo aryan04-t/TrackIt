@@ -8,6 +8,11 @@ import Subscriptions from './subscriptions.jsx';
 import ExpenseTracker from './expenseTracker.jsx';
 import CreateExpenseEntry from './createExpenseEntry.jsx';
 import EditExpenseEntry from './editExpenseEntry.jsx';
+import Notepad from './notepad.jsx';
+import CreateNotepad from './createNotepad.jsx';
+import Login from './login.jsx';
+import SignUp from './signUp.jsx';
+import Guide from './guide.jsx'; 
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -18,13 +23,20 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
             <Routes>
 
+                <Route path="/signUp" element={<SignUp />} /> 
+                <Route path="/login" element={<Login />} /> 
+
+
                 <Route path="/" element={<Home />} /> 
                 <Route path="/home" element={<Home />} /> 
                 <Route path="/products" element={<Products />} /> 
                 <Route path="/subscriptions" element={<Subscriptions />} /> 
+                <Route path="/guide" element={<Guide />} /> 
                 <Route path="/expenseTracker" element={<ExpenseTracker />} /> 
                 <Route path="/createExpenseEntry" element={<CreateExpenseEntry />} /> 
                 <Route path="/editExpenseEntry/:id" element={<EditExpenseEntry />} /> 
+                <Route path="/notepad" element={<Notepad />} />
+                <Route path="/createNotepad" element={<CreateNotepad />} />
 
             </Routes>
             

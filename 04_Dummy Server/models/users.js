@@ -1,13 +1,35 @@
 const mongoose = require('mongoose');
 
-const expenseSchema = new mongoose.Schema({
+const userSchema = new mongoose.Schema({
 
-    
-    expenseName: String,
-    expenseAmount: Number
+    firstName: {
+        type: String,
+        required: true
+    },
+    lastName: {
+        type: String,
+        required: true
+    },
+    email: {
+        type: String,
+        unique: true,
+        required: true
+    },
+    password: {
+        type: String,
+        required: true
+    },
+    expenseTracker: [{
+        expenseName: String,
+        expenseAmount: Number
+    }],
+    notepad : [{
+        notepadHeading: String,
+        notepadContent: String
+    }]
 
 });
 
-const expenseModel = mongoose.model("expenseTracker", expenseSchema);
+const userModel = mongoose.model("trackItUsers", userSchema);
 
-module.exports = expenseModel; 
+module.exports = userModel; 

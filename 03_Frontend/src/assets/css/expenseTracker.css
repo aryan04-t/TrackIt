@@ -6,33 +6,41 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 40px 0px;
 
+    position: relative;
+
 }
 
-#add-button{
+#add-expense-button{
 
-    height: 80px;
-    width: 200px; 
-
-    background-color: lightgreen;
-    padding: 20px 40px;
+    background-color: rgb(73, 220, 132);
+    box-shadow: 1px 2px 2px 2px rgb(34, 196, 97);
     
-    border: none; 
-    border-radius: 5px;
-
+    height: 6vh;
+    width: 20vh;
+    font-size: 2vh;
+    font-weight: bold;
+    
+    border: none;
+    border-radius: 20px;
+    
     transition: border-radius 0.5s;
+    
+    position: absolute;
+    bottom: 3vw;
+    right: 5vw;
 
 }
 
-
-#add-button:hover{
-
-    border-radius: 50px;
+#add-expense-button:hover{
+    
+    background-color: rgb(6, 181, 212);
+    box-shadow: 1px 2px 2px 2px rgb(101, 230, 248);
 
 }
+
 
 table{
     
