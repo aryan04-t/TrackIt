@@ -3,8 +3,8 @@ import { useParams, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 
-import '../assets/css/editExpenseEntry.css'
-import '../assets/css/createExpenseEntry.css'
+import '../assets/css/editExpenseEntry.css' 
+import '../assets/css/createExpenseEntry.css' 
 
 function EditExpenseEntry() {
 
@@ -16,18 +16,28 @@ function EditExpenseEntry() {
   const [expenseAmount, setExpenseAmount] = useState(''); 
   
   const navigate = useNavigate();
-
-
+  
+  
   useEffect( () => {
 
-    axios.get('http://localhost:3000/getExpenseEntry/' + id)
-    .then( (res) => {
-      setExpenseName(res.data.singleEntry.expenseName); 
-      setExpenseAmount(res.data.singleEntry.expenseAmount); 
-    })
-    .catch( (err) => {
-      console.log(err);
-    })
+    let email = localStorage.getItem('email');
+    let isLoggedIn = localStorage.getItem('isLoggedIn');
+
+    if(isLoggedIn === 'true'){
+
+      axios.get(`http://localhost:3000/getOneExpenseEntry/${id}/${email}/${isLoggedIn}`)
+      .then( (res) => { 
+        setExpenseName(res.data.singleEntry.expenseName); 
+        setExpenseAmount(res.data.singleEntry.expenseAmount); 
+      })
+      .catch( (err) => {
+        console.log(err);
+      })
+
+    }
+    else{
+      navigate('/signup');
+    }
 
   }, []);
 
@@ -37,15 +47,24 @@ function EditExpenseEntry() {
     
     e.preventDefault();
 
-    axios.put('http://localhost:3000/editExpenseEntry/' + id, {expenseName, expenseAmount})
-    .then( (res) => {
-      if(res.status === 200){
-        navigate('/expenseTracker');
-      }
-    })
-    .catch(err => console.log(err));
-    
-    
+    let email = localStorage.getItem('email');
+    let isLoggedIn = localStorage.getItem('isLoggedIn');
+
+    if(isLoggedIn === 'true'){
+
+      axios.put(`http://localhost:3000/editExpenseEntry/${id}/${email}/${isLoggedIn}`, {expenseName, expenseAmount})
+      .then( (res) => {
+        if(res.status === 200){
+          navigate('/expenseTracker'); 
+        }
+      })
+      .catch(err => console.log(err));
+
+    }
+    else{
+      navigate('/signup'); 
+    }
+
   }
 
   return (

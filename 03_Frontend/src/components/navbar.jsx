@@ -45,17 +45,17 @@ function Navbar() {
                         </button>
                     </NavLink> 
 
-                    <button>
-                        <li data-text="Guide"> Guide </li>
-                    </button>
+                    <NavLink to='/guide' >
+                        <button>
+                            <li data-text="Guide"> Guide </li>
+                        </button>
+                    </NavLink>
 
-                    <button>
-                        <li data-text="About"> About </li>
-                    </button>
-
-                    <button>
-                        <li data-text="Login"> Login </li>
-                    </button>
+                    <NavLink to='/login'>
+                        <button>
+                            <li data-text="Login"> Login </li>
+                        </button>
+                    </NavLink>
                     
                 </ul>
 

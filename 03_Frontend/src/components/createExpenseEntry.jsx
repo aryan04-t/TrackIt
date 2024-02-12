@@ -15,15 +15,24 @@ function CreateExpenseEntry() {
   
   const Submit = (e) =>{ 
     
-    e.preventDefault();
-    axios.post('http://localhost:3000/createExpenseEntry', {expenseName, expenseAmount})
-    .then((res)=>{
-      if(res.status === 200){
-        navigate('/expenseTracker');
-      }  
-    })
-    .catch(err => console.log(err)); 
+    e.preventDefault(); 
     
+    let email = localStorage.getItem('email'); 
+    let isLoggedIn = localStorage.getItem('isLoggedIn'); 
+
+    if(isLoggedIn === 'true'){
+      axios.post('http://localhost:3000/createExpenseEntry', {email, isLoggedIn, expenseName, expenseAmount})
+      .then((res)=>{
+        if(res.status === 200){
+          navigate('/expenseTracker');
+        }  
+      })
+      .catch(err => console.log(err)); 
+    }
+    else{
+      navigate('/signup'); 
+    }
+
   }
   
   
@@ -37,13 +46,13 @@ function CreateExpenseEntry() {
             <h1 id="expense-heading"> Add Expense </h1>
             
             <div className='input-row'>
-                <label htmlFor="" > <span className='label-text'> Expense Description </span> </label>
-                <input type='text' placeholder='Enter decription of expense' className='input-box' onChange = { (e) => setExpenseName(e.target.value) } /> 
+                <label htmlFor="" > <span className='label-text'> Expense Description: </span> </label>
+                <input type='text' placeholder='Enter decription of expense' className='input-box' onChange = { (e) => setExpenseName(e.target.value) } required/> 
             </div>
             
             <div className='input-row'>
-                <label htmlFor="" > <span className='label-text'> Expense Amount </span> </label>
-                <input type='text' placeholder='Enter amount of expense' className='input-box' onChange = { (e) => setExpenseAmount(e.target.value) } /> 
+                <label id="expense-amount-label" htmlFor="" > <span className='label-text'> Expense Amount: </span> </label>
+                <input id="expense-amount-input" type='text' placeholder='Enter amount of expense' className='input-box' onChange = { (e) => setExpenseAmount(e.target.value) } required/> 
             </div>
 
             <button id="submit-button" type="submit" > Submit </button> 

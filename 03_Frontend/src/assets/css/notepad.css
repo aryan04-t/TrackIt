@@ -1,0 +1,211 @@
+#notepad-container{ 
+
+    height: calc(100vh - 85px);
+    width: 100vw;
+    background-color: #D9D9D9;
+    
+    position: relative;
+
+} 
+
+
+#background-text{
+    
+    z-index: 0;
+
+    height: 100%; 
+    width: 100vw; 
+    font-size: 13vw; 
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: grey;
+
+    user-select: none;
+
+}
+
+
+#add-notepad-button{
+    
+    z-index: 3;
+
+    border: none;
+    background-color: rgb(73, 220, 132);
+    box-shadow: 1px 2px 2px 2px rgb(34, 196, 97);
+    
+    height: 6vh;
+    width: 20vh;
+    font-size: 2vh;
+    font-weight: bold;
+    
+    border-radius: 20px;
+    
+    transition: border-radius 0.5s;
+    
+    position: absolute;
+    bottom: 3vw;
+    right: 5vw;
+}
+
+
+#add-notepad-button:hover{
+    
+    background-color: rgb(6, 181, 212);
+    box-shadow: 1px 2px 2px 2px rgb(101, 230, 248);
+
+}
+
+#foreground{
+
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+    top: 0px;
+
+    background-color: transparent;
+
+    z-index: 1;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    overflow: hidden;
+
+}
+
+.note-card{
+
+    z-index: 2;
+
+    height: 250px;
+    width: 190px;
+    background-color: #515151;
+
+    border-radius: 20px;
+
+    position: relative;
+    overflow: hidden;
+
+    box-shadow: 1px 1px 8px #6d6d6d;
+    margin: 22px 32px;
+
+    cursor: grab;
+
+}
+
+#open-button{
+
+    background-color: transparent;
+    border: none;
+    
+    position: absolute;
+    bottom: 4px;
+    right: 68px;
+
+    z-index: 2;
+    
+    cursor: pointer;
+}
+
+#edit-button{
+
+    background-color: transparent;
+    border: none;
+    
+    position: absolute;
+    bottom: 4px;
+    right: 40px;
+
+    z-index: 2;
+    
+    cursor: pointer;
+}
+
+#delete-button{
+    
+    background-color: transparent;
+    border: none;
+    
+    position: absolute;
+    bottom: 4px;
+    right: 15px;
+
+    z-index: 2;
+
+    cursor: pointer;
+}
+
+#eye-icon{
+
+    height: 18px;
+    width: 18px;
+    background-color: transparent;
+
+}
+
+#edit-icon{
+
+    height: 18px;
+    width: 18px;
+    background-color: transparent;
+
+}
+
+#delete-icon{
+
+    height: 18px;
+    width: 18px;
+    background-color: transparent;
+
+}
+
+
+#note-card-footer{
+
+    height: 35px;
+    width: 100%;
+    background-color: rgb(143, 182, 255);
+    position: absolute;
+    bottom: 0px;
+
+}
+
+
+#note-heading{
+
+    height: 20%;
+    width: 100%;
+    background-color: rgb(71, 151, 255);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'IBM Plex Serif', serif;;
+
+}
+
+
+#note-content{
+    
+    height: calc(80% - 35px);
+    width: 100%;
+    background-color: transparent;
+
+    text-align: left;
+    padding: 10px;
+
+    font-size: 14.5px;
+    font-family: 'IBM Plex Serif', serif;
+    color: white;
+
+    overflow: hidden;
+
+}

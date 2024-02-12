@@ -23,11 +23,16 @@ function Signup() {
         .then( (res) => {
             if(res.status === 200){
                 navigate('/login'); 
+                localStorage.setItem("email", email);
+            }
+            else{
+                localStorage.setItem("email", null);
             }
         })
         .catch( (err) => {
             console.log(err);
             res.status(400).json({message : "Internal server error"});
+            localStorage.setItem("email", null);
         });
 
     }

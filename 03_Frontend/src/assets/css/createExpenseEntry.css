@@ -22,7 +22,7 @@
 
     height: 100px;
     width: 500px;
-    background-color: aqua;
+    background-color: black;
     margin: 10px;
 
     display: flex;
@@ -51,6 +51,7 @@
 
     font-size: 18px;
     font-weight: bold;
+    color: white;
 
 }
 
@@ -58,7 +59,10 @@
 
     height: 50px;
     width: 100px;
-    background-color: green;
+    
+    background-color: rgb(73, 220, 132);
+    box-shadow: 1px 2px 2px 2px rgb(34, 196, 97);
+    
     border: none;
     border-radius: 10px;
     margin: 40px 0px 0px 0px;
@@ -67,16 +71,31 @@
 }
 
 #expense-input-form #submit-button:hover{
-
-    background-color: lightgreen;
-    border: 1px solid black;
     
+    background-color: rgb(6, 181, 212);
+    box-shadow: 1px 2px 2px 2px rgb(101, 230, 248);
+
 }
+
+
+#expense-amount-label{
+
+    margin: 0px 0px 0px 20px;
+
+}
+
+
+#expense-amount-input{
+
+    margin: 0px 0px 0px 35px;
+
+}
+
 
 #expense-heading{
 
     font-size: 50px;
     font-weight: bold;
-
-
+    color: grey;
+    text-shadow: 1.5px 1.5px 2px black;
 }

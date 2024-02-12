@@ -20,9 +20,6 @@ function Login() {
 
         e.preventDefault();
 
-        console.log(email);
-        console.log(password);
-
         axios.post('http://localhost:3000/login', {email, password})
         .then( (res) => {
             if(res.status === 200){
@@ -31,11 +28,14 @@ function Login() {
                 localStorage.setItem("isLoggedIn", true);
             }
             else{
+                localStorage.setItem("email", null);
                 localStorage.setItem("isLoggedIn", false);
             }
         })
         .catch( (err) => {
             console.log(err);
+            localStorage.setItem("email", null);
+            localStorage.setItem("isLoggedIn", false);
         })
     }
 
