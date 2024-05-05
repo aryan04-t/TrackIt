@@ -16,3 +16,4 @@
 2. Code Base on GitHub 
 3. Deployment 
 4. API Docs 
+5. Project's Live Demo Video (1 min) 
