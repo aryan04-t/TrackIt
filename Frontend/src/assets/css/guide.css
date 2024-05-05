@@ -1,0 +1,46 @@
+.guide-content-container{
+
+    background-color: white;
+    padding: 30px;
+    margin: 3vw 5vw;
+
+    border-radius: 30px;
+    
+}
+
+.box-shadow-pink{
+    box-shadow: 5px 5px 30px 10px #FF43BF4D;
+}
+
+.box-shadow-yellow{
+    box-shadow: 5px 5px 30px 10px #FFE5004D;
+}
+
+.box-shadow-blue{
+    box-shadow: 5px 5px 30px 10px #00E0FF4D;
+}
+
+.font-size-30{
+    font-size: 30px;
+}
+
+.font-size-18{
+    font-size: 18px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+
+.heading-margin{
+    margin: 0px 0px 20px 0px;
+}
+
+.ul-padding-responsive{
+    padding: 0vw 1.1vw;
+}
+
+.ol-padding-responsive{
+    padding: 0.2vw 2vw 0vw 1vw;
+}
